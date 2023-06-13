@@ -7,16 +7,22 @@
       <mat-form-field>
 
         <input matInput type="email" name="email"
+                required
                 ngModel #email="ngModel"
                placeholder="Email">
+
+          <mat-error *ngIf="email.errors?.required">The email is required.</mat-error>
 
       </mat-form-field>
 
       <mat-form-field>
 
         <input matInput type="password" name="password"
+              required
               ngModel #password="ngModel"
               placeholder="Password">
+
+         <mat-error *ngIf="password.errors?.required">The password is required.</mat-error>
 
       </mat-form-field>
 
@@ -25,6 +31,6 @@
       </button>
 
     </form>
-    {{email.value + " " + password.value}}
+    {{email.errors | json}}
   </mat-card-content>
 </mat-card>
