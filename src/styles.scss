@@ -100,3 +100,46 @@ $theme: mat.define-light-theme((
 .mat-elevation-z10 {
   box-shadow: 0 6px 6px -3px #0003, 0 10px 14px 1px #00000024, 0 4px 18px 3px #0000001f !important;
 }
+
+
+
+.data-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+
+.data-form mat-form-field {
+  display: block;
+  margin-top: 10px;
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-buttons button {
+  margin-right: 10px;
+}
+
+.form-val {
+  margin-top: 10px;
+}
+
+.field-message {
+  color:#f44336;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  font-size: 75%;
+  font-family: "Roboto";
+}
+
+mat-radio-button {
+  margin-right: 10px;
+}
