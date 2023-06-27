@@ -35,4 +35,10 @@ export class LoginReactiveComponent implements OnInit {
     return this.form.get('password');
   }
 
+  login() {
+    const formValue = this.form.value;
+
+    console.log(formValue.email, formValue.password);
+  }
+
 }
