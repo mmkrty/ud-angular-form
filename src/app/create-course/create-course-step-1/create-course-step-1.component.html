@@ -12,4 +12,30 @@
 
   </mat-form-field>
 
+  <mat-form-field>
+
+    <input matInput [matDatepicker]="releaseDatePicker" 
+            formControlName="releaseAt" 
+            placeholder="Release date">
+
+    <mat-datepicker-toggle matSuffix [for]="releaseDatePicker"></mat-datepicker-toggle>
+
+    <mat-datepicker #releaseDatePicker></mat-datepicker>
+
+  </mat-form-field>
+
+  <mat-checkbox color="primary" formControlName="downloadsAllowed">
+    Downloads allowed?
+  </mat-checkbox>
+
+  <mat-form-field appearance="outline">
+
+    <textarea matInput formControlName="longDescription" placeholder="Description"></textarea>
+
+  </mat-form-field>
+
+</div>
+
+<div class="form-val">
+  {{form.value | json}}
 </div>
