@@ -16,4 +16,10 @@ export class FileUploadComponent {
 
   fileName = '';
 
+  onFileSelected(event) {
+    const file: File = event.target.files[0];
+    this.fileName = file.name;
+    console.log(this.fileName)
+  }
+
 }
